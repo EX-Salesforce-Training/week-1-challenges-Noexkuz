@@ -1,0 +1,72 @@
+public class ChallengeOne {
+	Integer int1;
+    String stg;
+    Account acc;
+    
+    public void SetValues(){
+        int1 = 25;
+        stg = 'Hello';
+        acc = new Account();
+        acc.Name = 'Tony';
+    }
+    public void GetValues(){
+        system.debug(int1);
+        system.debug(stg);
+        system.debug(acc.Name);
+    }
+    
+}
+
+public class ChallengeTwo {
+	
+    public void ForLoop(){
+        List<Integer> intList = new List<Integer>();
+        intList.add(1);
+        intList.add(2);
+        intList.add(3);
+        intList.add(4);
+        intList.add(5);
+        intList.add(6);
+        intList.add(7);
+        intList.add(8);
+        intList.add(9);
+        intList.add(10);
+        
+        for(Integer s: intList){
+            system.debug(s);
+        }
+        
+    }
+	public void WhileLoop(){
+        Integer i = 1;
+        
+        while(i < 11){
+            system.debug(i);
+            i++;
+        }
+    }
+	public void Iffy(){
+        if(false){
+            system.debug('false');
+        } else if (true){
+            system.debug('true');
+        }
+    }
+}
+
+public class ChallengeThree {
+	Account acc;
+    
+    public void SetAccount(){
+        acc = new Account();
+        acc.Name = 'Tony';
+        acc.AnnualRevenue = 1000;
+        acc.Description = 'Money';
+        
+
+    }
+    
+    public void GetAccount(){
+        system.debug(acc);
+    }
+}
